@@ -1,8 +1,13 @@
-# study-demo 项目待办列表
+### Project todo list
 
-## 模块计划(已完成：55 / 66)
+---
+#### Module plan (1 / 1)
 
-- [x] apollo（apollo 配置中心）
+| State | Description                 | Deadline   |
+| ----- | --------------------------- | ---------- |
+| 🚀     |                             |            |
+| ⭐️  | Apollo configuration center | 2023-03-12 |
 
+---
 
-## 备注
+#### 备注

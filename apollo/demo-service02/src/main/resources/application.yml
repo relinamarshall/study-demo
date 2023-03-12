@@ -1,0 +1,33 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: demo-service
+
+# apollo demo.apollo.config begin
+app:
+  id: demo-service
+
+apollo:
+#  apollo eureka address
+  meta: http://localhost:8080
+#   assign apollo cluster,Use the configuration of the corresponding cluster for the same cluster instance
+#  cluster:
+#   configure the cache directory to provide configuration services when the network is unavailable
+#  cache-dir:
+  bootstrap:
+#    enable apollo
+    enabled: true
+
+# assign environment
+env: Dev
+
+# custom configuration
+name: demo-service
+mysql:
+  host: localhost
+  port: 3306
+  username: root
+  password: 63967261
+# apollo demo.apollo.config end
