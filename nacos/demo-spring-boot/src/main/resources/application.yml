@@ -1,0 +1,8 @@
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
+    data-id: test
+    auto-refresh: true
+#    配置文件方式需开启Nacos,否则会报错
+    bootstrap:
+      enable: true

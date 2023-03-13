@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<!--springcloud springboot 版本要对应-->
+		<artifactId>spring-boot-parent</artifactId>
+		<groupId>org.springframework.boot</groupId>
+		<version>2.3.12.RELEASE</version>
+		<!--问题 子模块的parent写的不是父模块，而是继承了springboot 需配置 relativePath-->
+		<relativePath />
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>demo-spring-cloud</artifactId>
+
+	<properties>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>2.3.12.RELEASE</version>
+		</dependency>
+		<!--nacos springcloud-->
+		<dependency>
+			<groupId>com.alibaba.cloud</groupId>
+			<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+			<version>2.2.8.RELEASE</version>
+		</dependency>
+	</dependencies>
+</project>
