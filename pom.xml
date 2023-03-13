@@ -8,6 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
 		<module>apollo</module>
+		<module>useragent</module>
 	</modules>
 
 	<name>study-demo</name>
