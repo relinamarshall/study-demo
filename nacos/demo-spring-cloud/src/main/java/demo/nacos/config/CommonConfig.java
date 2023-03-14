@@ -20,4 +20,13 @@ public class CommonConfig {
      */
     @Value(value = "${name}")
     private String name;
+
+    /**
+     * getName
+     *
+     * @return
+     */
+    public String getName() {
+        return name;
+    }
 }
