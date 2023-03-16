@@ -13,6 +13,7 @@
 		<module>nacos</module>
 		<module>elasticsearch</module>
 		<module>redis</module>
+		<module>shiro</module>
 	</modules>
 
 	<name>study-demo</name>

@@ -1,0 +1,50 @@
+
+spring:
+  datasource:
+    username: root
+    password: 63967261
+    # 加入时区报错了 增加一个时区的配置就行 serverTimezone=UTC&
+    url: jdbc:mysql://localhost:3306/shiro?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 德鲁伊数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    #Spring Boot 默认是不注入这些属性值的，需要自己绑定
+    #druid 数据源专有配置
+    druid:
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1 FROM DUAL
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      #配置监控统计拦截的filters，stat:监控统计、log4j：日志记录、wall：防御sql注入
+      #如果允许时报错  java.lang.ClassNotFoundException: org.apache.log4j.Priority
+      #则导入 log4j 依赖即可，Maven 地址：https://mvnrepository.com/artifact/log4j/log4j
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+      use-global-data-source-stat: true
+      max-create-task-count: 20
+      filters: stat,wall,log4j
+      stat-view-servlet:
+        login-username: admin
+        login-password: 123456
+        reset-enable: false
+        url-pattern: /druid/*
+        enabled: true
+        # 添加IP白名单
+        #allow:
+        # 添加IP黑名单，当白名单和黑名单重复时，黑名单优先级更高
+        #deny:
+        web-stat-filter:
+          # 添加过滤规则
+          url-pattern: /*
+          # 忽略过滤格式
+          exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+
+logging:
+  level:
+    demo.mapper: debug
