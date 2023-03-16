@@ -1,11 +1,11 @@
 ### Nacos官网
 ```shell
-http://nacos.io/zh-cn/docs/quick-start.html
+explorer http://nacos.io/zh-cn
 ```
 
 ### Github
 ```shell
-https://github.com/alibaba/nacos
+explorer https://github.com/alibaba/nacos
 ```
 
 ### Nacos 单机启动

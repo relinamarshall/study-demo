@@ -12,6 +12,12 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
  */
 @ControllerAdvice
 public class GlobalExceptionHandler {
+    /**
+     * exceptionHandler
+     *
+     * @param e Exception
+     * @return String
+     */
     @ExceptionHandler(Exception.class)
     public String exceptionHandler(Exception e) {
         if (e instanceof AuthorizationException) {

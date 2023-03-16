@@ -1,9 +1,13 @@
 ## Elasticsearch7.6.1
-> 此 demo 主要演示了 Spring Boot 如何集成 `elasticsearch-rest-high-level-client` 完成对 `ElasticSearch 7.x` 版本的基本 CURD 操作
+
+> 此 demo 主要演示了 Spring Boot 如何集成 `elasticsearch-rest-high-level-client` 完成对 `ElasticSearch 7.x` 版本的基本
+> CURD 操作
 ---
+
 ### Windows
-环境地址
+
 ```shell
+环境地址
 environment/elasticsearch-7.6.1
 
 启动
@@ -45,27 +49,37 @@ services:
       options:
         max-size: "50m"
 ```
+
 4.启动: `docker-compose -f elasticsearch.yaml up -d`
 
 ---
+
 ### Elasticsearch 升级
 
 先升级到 6.8，索引创建，设置 mapping 等操作加参数：include_type_name=true，然后滚动升级到 7，旧索引可以用 type 访问。具体可以参考：
 
-https://www.elastic.co/cn/blog/moving-from-types-to-typeless-apis-in-elasticsearch-7-0
+```shell
+explorer https://www.elastic.co/cn/blog/moving-from-types-to-typeless-apis-in-elasticsearch-7-0
+```
 
-https://www.elastic.co/guide/en/elasticsearch/reference/7.0/removal-of-types.html
+```shell
+explorer https://www.elastic.co/guide/en/elasticsearch/reference/7.0/removal-of-types.html
+```
 
 ---
 
 ### Elasticsearch 配置账密
+
 1、修改elasticsearch.yml文件,在里面添加如下内容,并重启es
+
 ```shell
 xpack.security.enabled: true
 xpack.license.self_generated.type: basic
 xpack.security.transport.ssl.enabled: true
 ```
+
 2、进入es的安装根目录bin下 `本Demo密码全都是63967261`
+
 ```shell
 # 按不同系统执行 设置用户名和密码的命令,为以下几个用户分别设置密码
 # elastic,apm_system,kibana,kibana_system,logstash_system,beats_system,remote_monitoring_user
@@ -95,7 +109,9 @@ Changed password for user [beats_system]
 Changed password for user [remote_monitoring_user]
 Changed password for user [elastic]
 ```
+
 3、如果有kibana,则配置kibana.yml
+
 ```shell
 elasticsearch.username: "elastic"
 elasticsearch.password: "63967261"
