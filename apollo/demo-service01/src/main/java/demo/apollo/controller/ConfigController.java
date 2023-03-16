@@ -14,7 +14,7 @@ import lombok.RequiredArgsConstructor;
  * ConfigController
  *
  * @author Wenzhou
- * @date 2023/3/12 18:57
+ * @since 2023/3/12 18:57
  */
 @RestController
 @RequiredArgsConstructor

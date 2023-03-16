@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * {@link @RefreshScope} 开启动态刷新
  *
  * @author Wenzhou
- * @date 2023/3/13 23:20
+ * @since 2023/3/13 23:20
  */
 @Component
 @RefreshScope

@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
  * 测试服务发现
  *
  * @author Wenzhou
- * @date 2023/3/14 21:56
+ * @since 2023/3/14 21:56
  */
 @SpringBootApplication
 public class NacosSpringCloudConsumeApplication {

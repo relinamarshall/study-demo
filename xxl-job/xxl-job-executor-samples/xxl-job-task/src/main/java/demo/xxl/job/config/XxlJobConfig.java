@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
  * XxlJobConfig
  *
  * @author Wenzhou
- * @date 2023/3/13 16:08
+ * @since 2023/3/13 16:08
  */
 @Slf4j
 @Configuration

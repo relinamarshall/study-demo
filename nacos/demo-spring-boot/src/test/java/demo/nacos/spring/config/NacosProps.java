@@ -9,7 +9,7 @@ import lombok.Data;
  * NacosProps
  *
  * @author Wenzhou
- * @date 2023/3/13 21:43
+ * @since 2023/3/13 21:43
  */
 @Data
 @Component

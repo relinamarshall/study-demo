@@ -1,0 +1,6 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-name: demo-cluster
+#      cluster-nodes: localhost:9300
+      cluster-nodes: 192.168.139.6:9300

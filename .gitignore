@@ -36,3 +36,10 @@ logs/
 
 ### VS CODE ###
 .vscode/
+
+### environment ###
+/elasticsearch/elasticsearch6.5.3/environment/
+/elasticsearch/elasticsearch7.6.1/environment/
+/elasticsearch/elasticsearch6.5.3/zip/
+/nacos/environment/
+/apollo/apollo-build/

@@ -10,7 +10,7 @@ import demo.nacos.spring.config.NacosProps;
  * NacosSpringTest
  *
  * @author Wenzhou
- * @date 2023/3/13 21:42
+ * @since 2023/3/13 21:42
  */
 public class NacosSpringTest {
     public static void main(String[] args) {

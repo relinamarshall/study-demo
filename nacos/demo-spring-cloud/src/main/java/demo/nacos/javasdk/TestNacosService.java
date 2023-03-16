@@ -13,7 +13,7 @@ import java.util.HashMap;
  * 服务注册
  *
  * @author Wenzhou
- * @date 2023/3/14 21:29
+ * @since 2023/3/14 21:29
  */
 public class TestNacosService {
     public static void main(String[] args) throws NacosException, IOException {

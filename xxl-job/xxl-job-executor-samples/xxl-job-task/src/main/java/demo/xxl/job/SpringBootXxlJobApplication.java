@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author Wenzhou
- * @date 2023/3/13 16:00
+ * @since 2023/3/13 16:00
  */
 @SpringBootApplication
 public class SpringBootXxlJobApplication {

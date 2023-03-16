@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author Wenzhou
- * @date 2023/3/13 21:45
+ * @since 2023/3/13 21:45
  */
 @ComponentScan("demo.nacos.spring")
 @EnableNacosConfig(globalProperties = @NacosProperties(serverAddr = "127.0.0.1:8848"))

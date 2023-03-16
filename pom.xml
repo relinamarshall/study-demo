@@ -11,6 +11,7 @@
 		<module>user-agent</module>
 		<module>xxl-job</module>
 		<module>nacos</module>
+		<module>elasticsearch</module>
 	</modules>
 
 	<name>study-demo</name>

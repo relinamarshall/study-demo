@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * NacosSpringCloudApplication
  *
  * @author Wenzhou
- * @date 2023/3/13 22:52
+ * @since 2023/3/13 22:52
  */
 @SpringBootApplication
 public class NacosSpringCloudApplication {

@@ -17,7 +17,7 @@ import static com.xxl.job.core.biz.model.ReturnT.SUCCESS;
  * 测试定时任务
  *
  * @author Wenzhou
- * @date 2023-03-13 16:06
+ * @since 2023-03-13 16:06
  */
 @Slf4j
 @Component

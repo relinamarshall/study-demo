@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * UserAgent
  *
  * @author Wenzhou
- * @date 2023/3/13 10:53
+ * @since 2023/3/13 10:53
  */
 @SpringBootApplication
 public class UserAgent {

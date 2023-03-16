@@ -17,7 +17,7 @@ import eu.bitwalker.useragentutils.UserAgent;
  * UserAgentController
  *
  * @author Wenzhou
- * @date 2023/3/13 10:54
+ * @since 2023/3/13 10:54
  */
 @RestController
 public class UserAgentController {

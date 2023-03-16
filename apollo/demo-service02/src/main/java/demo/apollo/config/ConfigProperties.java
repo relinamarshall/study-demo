@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
  * autowired custom configuration
  *
  * @author Wenzhou
- * @date 2023/3/12 18:41
+ * @since 2023/3/12 18:41
  */
 @Data
 @Component

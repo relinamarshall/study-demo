@@ -16,7 +16,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * nacos.config.bootstrap.enable: true
  *
  * @author Wenzhou
- * @date 2023/3/13 21:53
+ * @since 2023/3/13 21:53
  */
 @SpringBootApplication
 //@NacosPropertySource(dataId = "test", autoRefreshed = true)

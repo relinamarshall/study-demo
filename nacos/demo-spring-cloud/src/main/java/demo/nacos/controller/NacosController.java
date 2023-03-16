@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
  * {@link @RefreshScope}动态同步刷新配置中心
  *
  * @author Wenzhou
- * @date 2023/3/13 21:56
+ * @since 2023/3/13 21:56
  */
 @RestController
 @RefreshScope
