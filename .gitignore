@@ -38,8 +38,8 @@ logs/
 .vscode/
 
 ### environment ###
+/apollo/apollo-build/
 /elasticsearch/elasticsearch6.5.3/environment/
 /elasticsearch/elasticsearch7.6.1/environment/
 /elasticsearch/elasticsearch6.5.3/zip/
 /nacos/environment/
-/apollo/apollo-build/
