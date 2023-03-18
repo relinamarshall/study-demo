@@ -1,6 +1,6 @@
-### Apollo文档
-```text
-.\apollo-build\README.md
+### Apollo官网文档
+```shell
+explorer https://www.apolloconfig.com/#/zh/
 ```
 
 ### Nginx中文文档
