@@ -16,6 +16,5 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/error/403.html").setViewName("error/403");
         registry.addViewController("/index.html").setViewName("index");
-
     }
 }

@@ -15,6 +15,7 @@
 		<module>redis</module>
 		<module>shiro</module>
 		<module>security</module>
+		<module>easyexcel</module>
 	</modules>
 
 	<name>study-demo</name>

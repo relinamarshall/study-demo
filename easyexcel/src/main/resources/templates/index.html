@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="wen">
+    <title>测试上传下载Excel</title>
+</head>
+
+<body>
+<form th:action="@{/download}" method="get">
+    <button type="submit" th:text="下载1"></button>
+</form>
+<br>
+<form th:action="@{/downloadFailedUsingJson}" method="get">
+    <button type="submit" th:text="下载2"></button>
+</form>
+<br>
+<form th:action="@{/upload}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" value="file">
+    <button type="submit" th:text="上传"></button>
+</form>
+</body>
+
+</html>
