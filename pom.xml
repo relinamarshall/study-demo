@@ -16,6 +16,8 @@
 		<module>shiro</module>
 		<module>security</module>
 		<module>easyexcel</module>
+		<module>async</module>
+		<module>exception-handler</module>
 	</modules>
 
 	<name>study-demo</name>
