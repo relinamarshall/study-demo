@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.util.ReflectUtil;
 import demo.elasticsearch.model.Person;
 import demo.elasticsearch.service.PersonService;
 import demo.elasticsearch.service.base.BaseElasticsearchService;
@@ -80,7 +81,8 @@ public class PersonServiceImpl extends BaseElasticsearchService implements Perso
         List<Person> personList = new ArrayList<>();
         Arrays.stream(hits).forEach(hit -> {
             Map<String, Object> sourceAsMap = hit.getSourceAsMap();
-            Person person = BeanUtil.mapToBean(sourceAsMap, Person.class, true);
+            Person person = BeanUtil.fillBeanWithMap(sourceAsMap,
+                    ReflectUtil.newInstanceIfPossible(Person.class), true);
             personList.add(person);
         });
         return personList;
