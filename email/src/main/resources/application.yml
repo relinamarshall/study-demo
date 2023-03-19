@@ -1,0 +1,10 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: yifan0510@qq.com
+    # 使用 jasypt 加密密码，使用成加密密码，替换 ENC(加密密码)
+    password: ENC(DLEyTDZRu7T2VgeDRF9M0z3OPASt+347nE4O4lNYF+s=)
+# 为 jasypt 配置解密秘钥
+jasypt:
+  encryptor:
+    password: demo-email
