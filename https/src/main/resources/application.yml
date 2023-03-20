@@ -1,0 +1,13 @@
+server:
+  ssl:
+    # 证书路径
+    key-store: classpath:server.keystore
+    # 证书别名
+    key-alias: yifan
+    # P12证书格式
+    key-store-type: JKS
+    #与申请时输入一致
+    key-store-password: 63967261
+    # 浏览器默认端口 和 80 类似
+    key-password: 63967261
+  port: 443

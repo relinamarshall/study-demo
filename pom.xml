@@ -20,7 +20,6 @@
 		<module>exception-handler</module>
 		<module>email</module>
 		<module>log</module>
-		<module>log/aop</module>
 	</modules>
 
 	<name>study-demo</name>
