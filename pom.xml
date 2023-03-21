@@ -23,6 +23,7 @@
 		<module>swagger</module>
 		<module>session</module>
 		<module>orm</module>
+		<module>qiniuyun</module>
 	</modules>
 
 	<name>study-demo</name>

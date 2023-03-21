@@ -1,0 +1,20 @@
+server:
+  port: 8080
+qiniu:
+  ## 此处填写你自己的七牛云 access key
+  accessKey: gbIJrmKsaf3LXdB3MC0qFCwhaNeXl3BwbIJApH0g
+  ## 此处填写你自己的七牛云 secret key
+  secretKey: HMgYj1QGOfJOJm_Q6vvzc4zHb5SIGjH9y45xGl0l
+  ## 此处填写你自己的七牛云 bucket
+  bucket: demo-study-qiniuyun
+  ## 此处填写你自己的七牛云 域名
+  prefix: http://rrvc46yzv.hd-bkt.clouddn.com
+  ## 此处填写你自己的目录 demo
+  dict: demo/
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      location: F:\Project\SpringBoot\study-demo\qiniuyun\file
+      file-size-threshold: 5MB
+      max-file-size: 20MB
