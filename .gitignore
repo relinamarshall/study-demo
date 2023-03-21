@@ -44,3 +44,4 @@ logs/
 /elasticsearch/elasticsearch6.5.3/zip/
 /nacos/environment/
 /redis/environment/
+/session/environment/

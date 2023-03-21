@@ -21,6 +21,7 @@
 		<module>email</module>
 		<module>log</module>
 		<module>swagger</module>
+		<module>session</module>
 	</modules>
 
 	<name>study-demo</name>

@@ -1,6 +1,5 @@
 package demo.redis.controller;
 
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,7 +30,6 @@ public class RedisController {
      * @return {@link demo.redis.entity.User}
      */
     @GetMapping("/get/{id}")
-    @Cacheable
     public User getUserById(@PathVariable("id") Long id) {
         User user = null;
         if (redisUtil.hasKey(INDEX_NAME + id)) {
