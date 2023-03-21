@@ -22,6 +22,7 @@
 		<module>log</module>
 		<module>swagger</module>
 		<module>session</module>
+		<module>orm</module>
 	</modules>
 
 	<name>study-demo</name>
