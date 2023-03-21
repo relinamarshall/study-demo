@@ -20,6 +20,7 @@
 		<module>exception-handler</module>
 		<module>email</module>
 		<module>log</module>
+		<module>swagger</module>
 	</modules>
 
 	<name>study-demo</name>

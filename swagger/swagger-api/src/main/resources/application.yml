@@ -1,0 +1,8 @@
+server:
+  port: 8080
+swagger:
+  production: false
+  basic:
+    enable: true
+    username: admin
+    password: 63967261

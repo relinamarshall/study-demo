@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.study.demo</groupId>
+		<artifactId>swagger</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>swagger-api</artifactId>
+
+	<properties>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<!--swagger-api依赖-->
+		<!--Swagger 增强-->
+		<dependency>
+			<groupId>com.github.xiaoymin</groupId>
+			<artifactId>knife4j-spring-boot-starter</artifactId>
+			<!--在引用时请在maven中央仓库搜索3.X最新版本号-->
+			<version>3.0.3</version>
+		</dependency>
+
+		<!--配置Swagger访问密码-->
+		<dependency>
+			<groupId>com.github.xiaoymin</groupId>
+			<artifactId>swagger-bootstrap-ui</artifactId>
+			<version>1.9.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
+		<!--上面那个引了下面这两个就可以不引入-->
+		<!--<dependency>-->
+		<!--	<groupId>io.springfox</groupId>-->
+		<!--	<artifactId>springfox-swagger2</artifactId>-->
+		<!--	<version>${swagger.version}</version>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+		<!--	<groupId>io.springfox</groupId>-->
+		<!--	<artifactId>springfox-swagger-ui</artifactId>-->
+		<!--	<version>${swagger.version}</version>-->
+		<!--</dependency>-->
+	</dependencies>
+</project>
