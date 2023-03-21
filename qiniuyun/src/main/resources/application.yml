@@ -10,7 +10,7 @@ qiniu:
   ## 此处填写你自己的七牛云 域名
   prefix: http://rrvc46yzv.hd-bkt.clouddn.com
   ## 此处填写你自己的目录 demo
-  dict: demo/
+  dict: demo
 spring:
   servlet:
     multipart:

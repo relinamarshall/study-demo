@@ -22,4 +22,25 @@ public interface IQiniuyunService {
      * @throws QiniuException 七牛异常
      */
     Response uploadFile(File file) throws QiniuException;
+
+    /**
+     * getFile
+     * 获取文件
+     *
+     * @param domain   String
+     * @param filename String
+     * @return String
+     */
+    String getFile(String domain, String filename);
+
+    /**
+     * getFile
+     * 获取文件
+     *
+     * @param domain   String
+     * @param filename String
+     * @param owned    boolean
+     * @return String
+     */
+    String getFile(String domain, String filename, boolean owned);
 }
