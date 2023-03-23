@@ -24,6 +24,8 @@
 		<module>session</module>
 		<module>orm</module>
 		<module>qiniuyun</module>
+		<module>quartz</module>
+		<module>task</module>
 	</modules>
 
 	<name>study-demo</name>
