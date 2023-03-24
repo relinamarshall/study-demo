@@ -1,0 +1,21 @@
+package demo.rabbitmq;
+
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+/**
+ * RabbitMQApplicationTest
+ *
+ * @author Wenzhou
+ * @since 2023/3/24 11:12
+ */
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class RabbitMQApplicationTest {
+    @Test
+    void contextLoads() {
+
+    }
+}

@@ -26,6 +26,7 @@
 		<module>qiniuyun</module>
 		<module>quartz</module>
 		<module>task</module>
+		<module>rabbitmq</module>
 	</modules>
 
 	<name>study-demo</name>

@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import cn.hutool.core.collection.CollUtil;
@@ -30,6 +31,18 @@ import lombok.extern.slf4j.Slf4j;
 public class UserServiceTest extends MybatisPlusApplicationTest {
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private RoleService roleService;
+
+    /**
+     * 测试以Map方式接受出参
+     */
+    @Test
+    public void testGetUserForMap() {
+        Map<String, String> userForMap = roleService.getUserForMap();
+        log.info(userForMap.toString());
+    }
 
     /**
      * 测试Mybatis-Plus 新增

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="demo.mybatis.plus.mapper.RoleMapper">
+	<!--mapResult-->
+	<resultMap id="mapResult" type="java.util.HashMap">
+		<result property="key" column="data_key"/>
+		<result property="value" column="data_value"/>
+	</resultMap>
+
+	<!--getUserForMap-->
+	<select id="getUserForMap" resultMap="mapResult">
+		select id as data_key, name as data_value
+		from orm_role;
+	</select>
+</mapper>
