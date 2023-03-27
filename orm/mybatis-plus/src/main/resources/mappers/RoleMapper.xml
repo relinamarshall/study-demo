@@ -13,8 +13,9 @@
 		from orm_role;
 	</select>
 
-	<select id="getUserForMap2" resultMap="mapResult">
+	<select id="getUserForMap2" parameterType="String" resultMap="mapResult">
 		select id as data_key, name as data_value
-		from orm_role;
+		from orm_role
+		where id = #{id};
 	</select>
 </mapper>
