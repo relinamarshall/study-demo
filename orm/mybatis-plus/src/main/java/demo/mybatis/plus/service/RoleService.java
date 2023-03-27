@@ -19,4 +19,11 @@ public interface RoleService extends IService<Role> {
      * @return Map<String, String>
      */
     Map<String, String> getUserForMap();
+
+    /**
+     * getUserForMap2
+     *
+     * @return Map<String, String>
+     */
+    Map<String, String> getUserForMap2();
 }

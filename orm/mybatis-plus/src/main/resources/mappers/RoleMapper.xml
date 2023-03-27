@@ -12,4 +12,9 @@
 		select id as data_key, name as data_value
 		from orm_role;
 	</select>
+
+	<select id="getUserForMap2" resultMap="mapResult">
+		select id as data_key, name as data_value
+		from orm_role;
+	</select>
 </mapper>

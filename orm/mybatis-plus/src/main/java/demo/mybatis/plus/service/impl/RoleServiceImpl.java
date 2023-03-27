@@ -40,4 +40,11 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements Ro
             return mapResultHandler.getMappedResults();
         }
     }
+
+    @Override
+    public Map<String, String> getUserForMap2() {
+        MapResultHandler<String, String> mapResultHandler = new MapResultHandler<>();
+        this.baseMapper.getUserForMap2("1", mapResultHandler);
+        return mapResultHandler.getMappedResults();
+    }
 }

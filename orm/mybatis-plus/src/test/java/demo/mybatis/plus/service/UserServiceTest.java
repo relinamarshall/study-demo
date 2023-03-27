@@ -44,6 +44,12 @@ public class UserServiceTest extends MybatisPlusApplicationTest {
         log.info(userForMap.toString());
     }
 
+    @Test
+    public void testGetUserForMap2() {
+        Map<String, String> userForMap = roleService.getUserForMap2();
+        log.info(userForMap.toString());
+    }
+
     /**
      * 测试Mybatis-Plus 新增
      */
