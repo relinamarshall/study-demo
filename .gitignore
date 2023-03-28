@@ -46,3 +46,4 @@ logs/
 /nacos/environment/
 /redis/environment/
 /session/environment/
+/kafka/environment/kafka_2.12-3.0.1.tgz

@@ -27,6 +27,7 @@
 		<module>quartz</module>
 		<module>task</module>
 		<module>rabbitmq</module>
+		<module>kafka</module>
 	</modules>
 
 	<name>study-demo</name>
