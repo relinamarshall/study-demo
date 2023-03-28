@@ -10,7 +10,7 @@ notifications:
     recipients:
       - 726888283@qq.com
     on_success: always # default: change
-    on_failure: always # default: always
+    # on_failure: always # default: always
 # 缓存
 cache:
   directories:
