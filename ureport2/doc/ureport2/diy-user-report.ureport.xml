@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ureport>
+	<cell expand="None" name="A1" row="1" col="1" col-span="4">
+		<cell-style font-size="16" forecolor="0,0,0" font-family="黑体" bgcolor="5,178,32" bold="true" align="center"
+					valign="middle">
+			<left-border width="1" style="solid" color="0,0,0"/>
+			<right-border width="1" style="solid" color="0,0,0"/>
+			<top-border width="1" style="solid" color="0,0,0"/>
+			<bottom-border width="1" style="solid" color="0,0,0"/>
+		</cell-style>
+		<simple-value><![CDATA[用户报表]]></simple-value>
+	</cell>
+	<cell expand="None" name="A2" row="2" col="1">
+		<cell-style font-size="12" forecolor="0,0,0" font-family="黑体" bgcolor="5,178,32" bold="true" align="center"
+					valign="middle">
+			<left-border width="1" style="solid" color="0,0,0"/>
+			<right-border width="1" style="solid" color="0,0,0"/>
+			<top-border width="1" style="solid" color="0,0,0"/>
+			<bottom-border width="1" style="solid" color="0,0,0"/>
+		</cell-style>
+		<simple-value><![CDATA[序号]]></simple-value>
+	</cell>
+	<cell expand="None" name="B2" row="2" col="2">
+		<cell-style font-size="12" forecolor="0,0,0" font-family="黑体" bgcolor="5,178,32" bold="true" align="center"
+					valign="middle">
+			<left-border width="1" style="solid" color="0,0,0"/>
+			<right-border width="1" style="solid" color="0,0,0"/>
+			<top-border width="1" style="solid" color="0,0,0"/>
+			<bottom-border width="1" style="solid" color="0,0,0"/>
+		</cell-style>
+		<simple-value><![CDATA[名称]]></simple-value>
+	</cell>
+	<cell expand="None" name="C2" row="2" col="3">
+		<cell-style font-size="12" forecolor="0,0,0" font-family="黑体" bgcolor="5,178,32" bold="true" align="center"
+					valign="middle">
+			<left-border width="1" style="solid" color="0,0,0"/>
+			<right-border width="1" style="solid" color="0,0,0"/>
+			<top-border width="1" style="solid" color="0,0,0"/>
+			<bottom-border width="1" style="solid" color="0,0,0"/>
+		</cell-style>
+		<simple-value><![CDATA[创建时间]]></simple-value>
+	</cell>
+	<cell expand="None" name="D2" row="2" col="4">
+		<cell-style font-size="12" forecolor="0,0,0" font-family="黑体" bgcolor="5,178,32" bold="true" align="center"
+					valign="middle">
+			<left-border width="1" style="solid" color="0,0,0"/>
+			<right-border width="1" style="solid" color="0,0,0"/>
+			<top-border width="1" style="solid" color="0,0,0"/>
+			<bottom-border width="1" style="solid" color="0,0,0"/>
+		</cell-style>
+		<simple-value><![CDATA[是否可用]]></simple-value>
+	</cell>
+	<cell expand="Down" name="A3" row="3" col="1">
+		<cell-style font-size="10" font-family="楷体" bold="true" align="center" valign="middle">
+			<left-border width="1" style="solid" color="0,0,0"/>
+			<right-border width="1" style="solid" color="0,0,0"/>
+			<top-border width="1" style="solid" color="0,0,0"/>
+			<bottom-border width="1" style="solid" color="0,0,0"/>
+		</cell-style>
+		<dataset-value dataset-name="user" aggregate="group" property="id" order="none"
+					   mapping-type="simple"></dataset-value>
+	</cell>
+	<cell expand="Down" name="B3" row="3" col="2">
+		<cell-style font-size="10" font-family="楷体" bold="true" align="center" valign="middle">
+			<left-border width="1" style="solid" color="0,0,0"/>
+			<right-border width="1" style="solid" color="0,0,0"/>
+			<top-border width="1" style="solid" color="0,0,0"/>
+			<bottom-border width="1" style="solid" color="0,0,0"/>
+		</cell-style>
+		<dataset-value dataset-name="user" aggregate="group" property="name" order="none"
+					   mapping-type="simple"></dataset-value>
+	</cell>
+	<cell expand="Down" name="C3" row="3" col="3">
+		<cell-style font-size="10" font-family="楷体" format="yyyy年MM月dd日 HH时mm分ss秒" bold="true" align="center"
+					valign="middle">
+			<left-border width="1" style="solid" color="0,0,0"/>
+			<right-border width="1" style="solid" color="0,0,0"/>
+			<top-border width="1" style="solid" color="0,0,0"/>
+			<bottom-border width="1" style="solid" color="0,0,0"/>
+		</cell-style>
+		<dataset-value dataset-name="user" aggregate="group" property="create_time" order="none"
+					   mapping-type="simple"></dataset-value>
+	</cell>
+	<cell expand="Down" name="D3" row="3" col="4">
+		<cell-style font-size="10" font-family="楷体" bold="true" align="center" valign="middle">
+			<left-border width="1" style="solid" color="0,0,0"/>
+			<right-border width="1" style="solid" color="0,0,0"/>
+			<top-border width="1" style="solid" color="0,0,0"/>
+			<bottom-border width="1" style="solid" color="0,0,0"/>
+		</cell-style>
+		<dataset-value dataset-name="user" aggregate="group" property="status" order="none" mapping-type="simple">
+			<mapping-item value="0" label="否"/>
+			<mapping-item value="1" label="是"/>
+		</dataset-value>
+	</cell>
+	<row row-number="1" height="19"/>
+	<row row-number="2" height="19"/>
+	<row row-number="3" height="18"/>
+	<column col-number="1" width="80"/>
+	<column col-number="2" width="90"/>
+	<column col-number="3" width="158"/>
+	<column col-number="4" width="92"/>
+	<datasource name="内部数据源" type="buildin">
+		<dataset name="user" type="sql">
+			<sql><![CDATA[${
+	if(param("status")==null||param("status")==''){
+    	return "select * from t_user_ureport2"
+    }else{
+    	return "select * from t_user_ureport2 where status = :status"
+    }
+}]]></sql>
+			<field name="id"/>
+			<field name="name"/>
+			<field name="create_time"/>
+			<field name="status"/>
+			<parameter name="status" type="Integer" default-value="1"/>
+		</dataset>
+	</datasource>
+	<paper type="A4" left-margin="90" right-margin="90"
+		   top-margin="72" bottom-margin="72" paging-mode="fitpage" fixrows="0"
+		   width="595" height="842" orientation="portrait" html-report-align="left" bg-image=""
+		   html-interval-refresh-value="0" column-enabled="false"></paper>
+	<search-form form-position="up">
+		<grid show-border="false" type="Grid2X2" border-width="1" border-color="#eee">
+			<col size="6">
+				<input-select label="是否可用" type="Select" label-position="left" bind-parameter="status">
+					<option label="是" value="1"></option>
+					<option label="否" value="0"></option>
+				</input-select>
+			</col>
+			<col size="6">
+				<button-submit label="查询" align="left" type="Submit-button" style="btn-success"></button-submit>
+				<button-reset label="重置" align="left" type="Reset-button" style="btn-primary"></button-reset>
+			</col>
+		</grid>
+	</search-form>
+</ureport>

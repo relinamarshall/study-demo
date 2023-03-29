@@ -29,6 +29,8 @@
 		<module>rabbitmq</module>
 		<module>kafka</module>
 		<module>zookeeper</module>
+		<module>justauth</module>
+		<module>ureport2</module>
 	</modules>
 
 	<name>study-demo</name>
