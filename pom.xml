@@ -28,6 +28,7 @@
 		<module>task</module>
 		<module>rabbitmq</module>
 		<module>kafka</module>
+		<module>zookeeper</module>
 	</modules>
 
 	<name>study-demo</name>
