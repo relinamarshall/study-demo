@@ -8,7 +8,7 @@
 
 ### Project Todo List
 
-#### Module plan (21 / 23)
+#### Module plan (24 / 26)
 
 🚀 doing
 
