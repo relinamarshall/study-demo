@@ -31,6 +31,8 @@
 		<module>zookeeper</module>
 		<module>justauth</module>
 		<module>ureport2</module>
+		<module>actuator</module>
+		<module>admin</module>
 	</modules>
 
 	<name>study-demo</name>
