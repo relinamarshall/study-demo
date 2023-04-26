@@ -2,6 +2,10 @@ package demo.mybatis.plus.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
 import demo.mybatis.plus.entity.User;
 
 /**
@@ -11,4 +15,12 @@ import demo.mybatis.plus.entity.User;
  * @since 2023/3/21 16:20
  */
 public interface UserMapper extends BaseMapper<User> {
+    /**
+     * testBetweenDate
+     *
+     * @param begin String
+     * @param end   String
+     * @return List<User>
+     */
+    List<User> testBetweenDate(@Param("begin") String begin, @Param("end") String end);
 }

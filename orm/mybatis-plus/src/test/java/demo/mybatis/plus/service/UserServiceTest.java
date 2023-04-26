@@ -35,6 +35,12 @@ public class UserServiceTest extends MybatisPlusApplicationTest {
     @Autowired
     private RoleService roleService;
 
+    @Test
+    public void testBetweenDate() {
+        List<User> users = userService.testBetweenDate("2023-04-01","2023-05-01");
+        log.info(users.toString());
+    }
+
     /**
      * 测试以Map方式接受出参
      */

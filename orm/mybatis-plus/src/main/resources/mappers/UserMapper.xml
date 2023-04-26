@@ -6,4 +6,10 @@
 		select id, name
 		from orm;
 	</select>
+	<select id="testBetweenDate" resultType="demo.mybatis.plus.entity.User">
+		SELECT *
+		FROM ORM.ORM_USER
+		WHERE DATE_FORMAT(CREATE_TIME,'%Y-%m-%d')
+		    BETWEEN STR_TO_DATE(#{begin},'%Y-%m-%d') AND STR_TO_DATE(#{end},'%Y-%m-%d')
+	</select>
 </mapper>
