@@ -33,6 +33,7 @@
 		<module>ureport2</module>
 		<module>actuator</module>
 		<module>admin</module>
+		<module>rocketmq</module>
 	</modules>
 
 	<name>study-demo</name>
