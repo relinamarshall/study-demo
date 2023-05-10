@@ -10,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 
 /**
  * NacosController
- * {@link @RefreshScope}动态同步刷新配置中心
+ * {@link org.springframework.cloud.context.config.annotation.RefreshScope}动态同步刷新配置中心
  *
  * @author Wenzhou
  * @since 2023/3/13 21:56
