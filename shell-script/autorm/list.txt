@@ -1,0 +1,3 @@
+/nasdisk/ipub/dict-files
+/nasdisk/ipub/user-files
+/nasdisk/ipub/position-files
