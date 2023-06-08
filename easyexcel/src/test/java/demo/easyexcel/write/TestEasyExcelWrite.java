@@ -413,7 +413,7 @@ public class TestEasyExcelWrite {
      */
     @Test
     public void templateWrite() {
-        String templateFileName = PathUtil.getPath("templates", "template07.xlsx");
+        String templateFileName = PathUtil.getPath("template", "template07.xlsx");
         log.info(templateFileName);
 
         String fileName = PathUtil.getOutPath("templateWrite");
