@@ -21,4 +21,12 @@ public interface UserService extends IService<User> {
      * @return List<User>
      */
     List<User> testBetweenDate(String begin, String end);
+
+    /**
+     * testIn
+     *
+     * @param userNames String
+     * @return List<User>
+     */
+    List<User> testIn(String userNames);
 }

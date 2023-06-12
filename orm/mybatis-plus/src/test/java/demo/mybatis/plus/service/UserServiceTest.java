@@ -41,6 +41,12 @@ public class UserServiceTest extends MybatisPlusApplicationTest {
         log.info(users.toString());
     }
 
+    @Test
+    public void testIn() {
+        List<User> users = userService.testIn(null);
+        System.out.println(users);
+    }
+
     /**
      * 测试以Map方式接受出参
      */
