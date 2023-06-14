@@ -36,6 +36,7 @@
 		<module>rocketmq</module>
 		<module>webflux</module>
 		<module>mongodb</module>
+		<module>utils</module>
 	</modules>
 
 	<name>study-demo</name>
