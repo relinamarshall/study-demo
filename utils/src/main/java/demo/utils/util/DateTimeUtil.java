@@ -1,4 +1,4 @@
-package demo.utils;
+package demo.utils.util;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateFormatUtils;

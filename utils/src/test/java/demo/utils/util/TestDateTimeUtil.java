@@ -1,4 +1,4 @@
-package demo.utils;
+package demo.utils.util;
 
 import org.junit.Test;
 
@@ -43,7 +43,7 @@ public class TestDateTimeUtil {
         System.out.println(DateTimeUtil.calcAge("20000510"));
         System.out.println(DateTimeUtil.calcAge("20000510", new Date()));
         System.out.println(DateTimeUtil.getNowDate());
-        System.out.println(DateTimeUtil.getBetweenDay(DateTimeUtil.parseDate10("2023-05-10"),
-                DateTimeUtil.parseDate10("2023-06-10")));
+        System.out.println(DateTimeUtil.getBetweenDay(DateTimeUtil.parseDate10("2023-02-10"),
+                DateTimeUtil.parseDate10("2023-03-10")));
     }
 }
