@@ -893,7 +893,7 @@ public class TestEasyExcelWrite {
             ConverterDto data = new ConverterDto();
             data.setString("字符串" + i);
             data.setDate(new Date());
-            data.setDoubleData(0.56);
+            data.setDoubleData(1234123.56);
             list.add(data);
         }
         return list;

@@ -43,7 +43,7 @@ public class ConverterDto {
      * <p>
      * excel用百分比表示
      */
-    @NumberFormat("#.##%")
+    @NumberFormat("#,##0.00%")
     @ExcelProperty("数字标题")
     private Double doubleData;
 }

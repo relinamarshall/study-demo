@@ -12,8 +12,10 @@ import com.alibaba.excel.read.listener.ReadListener;
 import com.alibaba.excel.read.metadata.ReadSheet;
 import com.alibaba.excel.util.ListUtils;
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 
 import org.junit.Test;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 import java.util.Map;
@@ -24,6 +26,7 @@ import demo.easyexcel.read.dto.DemoDto;
 import demo.easyexcel.read.dto.DemoExtraDto;
 import demo.easyexcel.read.dto.ExceptionDemoDto;
 import demo.easyexcel.read.listener.CellDataDemoHeadDataListener;
+import demo.easyexcel.read.listener.CheckHeadListener;
 import demo.easyexcel.read.listener.ConverterDataListener;
 import demo.easyexcel.read.listener.DemoDataListener;
 import demo.easyexcel.read.listener.DemoExceptionListener;
@@ -312,5 +315,24 @@ public class TestEasyExcelRead {
 
         // 这里 只要， 然后读取 第一个sheet 同步读取会自动finish
         EasyExcel.read(fileName, new NoModelDataListener()).sheet().doRead();
+    }
+
+    /**
+     * 校验表头
+     */
+    @Test
+    public void checkExcelHead() {
+        String fileName = PathUtil.getPath("demo", "demo.xlsx");
+        log.info(fileName);
+        // 穿的为空不校验
+        String[] head = {"字符串标题", "日期标题", "数字标题"};
+        CheckHeadListener<DemoDto> listener = new CheckHeadListener<>(head, s ->
+                StringUtils.hasText(s.getString()) && s.getDate() != null && s.getDoubleData() != null,
+                s -> {
+                    log.info("{}", JSONObject.toJSONString(s));
+                    return true;
+                });
+        EasyExcel.read(fileName, DemoDto.class, listener).sheet().doRead();
+        log.info("{}", JSONObject.toJSONString(listener.buildImportResultVo()));
     }
 }
