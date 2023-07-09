@@ -14,6 +14,7 @@
 
 	<modules>
 		<module>elasticsearch7.6.1</module>
+		<module>es-query-starter</module>
 	</modules>
 
 	<properties>
