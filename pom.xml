@@ -37,6 +37,7 @@
 		<module>webflux</module>
 		<module>mongodb</module>
 		<module>utils</module>
+		<module>minio</module>
 	</modules>
 
 	<name>study-demo</name>

@@ -1,0 +1,8 @@
+oss:
+  type: minio
+  enabled: true
+  minio:
+    url: http://localhost:9000
+    access-key: 6ggGJWKBUgoE7ExL4nIl
+    secret-key: WpxgZo0rGmMo8vlGmep7GGasanCxtu3IsxiDIHkw
+    bucket-name: test
