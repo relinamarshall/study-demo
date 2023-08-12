@@ -4,7 +4,6 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
 import demo.async.AsyncApplicationTest;
@@ -30,7 +29,7 @@ public class AsyncTaskTest extends AsyncApplicationTest {
      * 测试异步任务
      */
     @Test
-    public void asyncTaskTest() throws InterruptedException, ExecutionException {
+    public void asyncTaskTest() throws InterruptedException {
         long start = System.currentTimeMillis();
         Future<Boolean> asyncTask1 = task.asyncTask1();
         Future<Boolean> asyncTask2 = task.asyncTask2();
