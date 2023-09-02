@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="demo.mock.mapper.UserMapper">
+	<!--getUserForMap-->
+	<select id="getUserForMap" resultType="java.util.Map">
+		select id, name
+		from orm;
+	</select>
+	<select id="testBetweenDate" resultType="demo.mock.entity.User">
+		SELECT *
+		FROM ORM.ORM_USER
+		WHERE DATE_FORMAT(CREATE_TIME,'%Y-%m-%d')
+		    BETWEEN STR_TO_DATE(#{begin},'%Y-%m-%d') AND STR_TO_DATE(#{end},'%Y-%m-%d')
+	</select>
+</mapper>
