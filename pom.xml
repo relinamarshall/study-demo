@@ -36,7 +36,6 @@
 		<module>rocketmq</module>
 		<module>webflux</module>
 		<module>mongodb</module>
-		<module>utils</module>
 		<module>minio</module>
 		<module>mock</module>
 	</modules>

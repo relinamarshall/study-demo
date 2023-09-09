@@ -24,6 +24,7 @@ public class CompletableFutureTest {
     public void testSupplyAsync() {
         CompletableFuture<String> cf = CompletableFuture.supplyAsync(() -> {
             System.out.println(Thread.currentThread().getName() + "do something....");
+            //throw new NullPointerException("null");
             return "result";
         });
 
