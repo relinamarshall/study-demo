@@ -1,0 +1,9 @@
+# 自定义配置
+hazelcast:
+  # 开关
+  enabled: true
+  # 静态配置，多个使用逗号隔开
+  members: 192.168.139.6:5701,192.168.139.7:5701
+logging:
+  level:
+    com.hazelcast: info

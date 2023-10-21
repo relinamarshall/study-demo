@@ -38,6 +38,7 @@
 		<module>mongodb</module>
 		<module>minio</module>
 		<module>mock</module>
+		<module>hazelcast</module>
 	</modules>
 
 	<name>study-demo</name>
