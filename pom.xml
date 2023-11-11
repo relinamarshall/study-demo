@@ -40,6 +40,7 @@
 		<module>mock</module>
 		<module>hazelcast</module>
 		<module>utils</module>
+		<module>dingtalk</module>
 	</modules>
 
 	<name>study-demo</name>
