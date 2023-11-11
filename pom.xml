@@ -39,6 +39,7 @@
 		<module>minio</module>
 		<module>mock</module>
 		<module>hazelcast</module>
+		<module>utils</module>
 	</modules>
 
 	<name>study-demo</name>
